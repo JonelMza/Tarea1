@@ -1,19 +1,63 @@
-package claseTarea;
+package claseTarea4;
+
+class Promedio
+{
+	double pta;
+
+	double emc;
+
+	double efc;
+
+	//double prom;
+
+	void establecerPTA(double a)
+	{
+		pta = a;
+	}
+	double obtenerPTA()
+	{
+		return pta;
+	}
+	void establecerEMC(double b)
+	{
+		emc = b;
+	}
+	double obtenerEMC()
+	{
+		return emc;
+	}
+	void estabalecerEFC(double c)
+	{
+		efc = c;
+	}
+	double obtenerEFC()
+	{
+		return efc;
+	}
+	public double promedioFinal()
+	{
+		double prom;
+
+		prom = (pta + emc + efc)/3
+
+		return prom;
+	}
+}
 
 class Main
 {
 	public static void main(String[] args)
-	{
-		InteresComp importAcum = new InteresComp();
+{
+	Promedio prom = new Promedio();
 
-		importAcum.establecerCap(2000);
-		importAcum.establecerInte(5);
-		importAcum.establecerNumPer(2);
+	prom.establecerPTA(12);
+	prom.establecerEMC(11);
+	prom.establecerEFC(12);
 
+	System.out.printn("El promedio de tareas es: "+prom.establecerPTA());
+	System.out.printn("La nota del medio curso es: "+prom.establecerEMC());
+	System.out.printn("La nota del fin de curso es: "+prom.establecerEFC());
+	System.out.printn("El promedio general es: "+prom.promedioFinal());
 
-		System.out.printn("Valor del capital es: "+importAcum.establecerCap);
-		System.out.printn("Valor del interes es: "+importAcum.establecerInte());
-		System.out.printn("Valor del numero de periodos: "+importAcum.establecerNumPer());
-		System.out.printn("El interes acumulado es: "+importAcum.forInterComp());
 }
 }
