@@ -1,0 +1,19 @@
+package claseTarea;
+
+class Main
+{
+	public static void main(String[] args)
+	{
+		InteresComp importAcum = new InteresComp();
+
+		importAcum.establecerCap(2000);
+		importAcum.establecerInte(5);
+		importAcum.establecerNumPer(2);
+
+
+		System.out.printn("Valor del capital es: "+importAcum.establecerCap);
+		System.out.printn("Valor del interes es: "+importAcum.establecerInte());
+		System.out.printn("Valor del numero de periodos: "+importAcum.establecerNumPer());
+		System.out.printn("El interes acumulado es: "+importAcum.forInterComp());
+}
+}
